@@ -506,6 +506,7 @@ set(LLVM_ALL_TARGETS
 set(LLVM_ALL_EXPERIMENTAL_TARGETS
   ARC
   CSKY
+  Dale
   DirectX
   M68k
   Xtensa
@@ -514,10 +515,10 @@ set(LLVM_ALL_EXPERIMENTAL_TARGETS
 # List of targets with JIT support:
 set(LLVM_TARGETS_WITH_JIT X86 PowerPC AArch64 ARM Mips SystemZ)
 
-set(LLVM_TARGETS_TO_BUILD "all"
+set(LLVM_TARGETS_TO_BUILD ""
     CACHE STRING "Semicolon-separated list of targets to build, or \"all\".")
 
-set(LLVM_EXPERIMENTAL_TARGETS_TO_BUILD ""
+set(LLVM_EXPERIMENTAL_TARGETS_TO_BUILD "Dale"
     CACHE STRING "Semicolon-separated list of experimental targets to build, or \"all\".")
 
 option(BUILD_SHARED_LIBS
